@@ -1,4 +1,7 @@
- <nav>
+
+ 
+<>
+            <nav>
                 <button
                  onKeyUp={handleButtonActivate}
                  onMouseUp={handleButtonActivate}
@@ -7,23 +10,15 @@
                  </button>
             </nav>
 
-            <dialog ref={modalPopup} onMouseUp={onDialogClick} onClose={handleDialogClose}>
+            <dialog onClose={handleDialogClose} onMouseUp={onDialogClick}>
                 <form method="dialog">
                     <h2>Settings</h2>
                     <div>
-                        <div>
-                            <label htmlFor="language" className="label select-text">Language</label>
-                            <select name="language"
-                                value={characterSettings.charSet}
-                                onChange={handleCharSetChange}
-                                className="select select-lg select-bordered font-medium" id="language">
-                                <option value="ar">Arabic</option>
-                                <option value="fa">Persian</option>
-                            </select>
-                        </div>
+                         // Modal content goes here!
                     </div>
                     <button type="submit" aria-label="close settings">
                         X
                     </button>
                 </form>
             </dialog>
+</>
